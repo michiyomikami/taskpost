@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <header class="mb-4">
+        <!--<header class="mb-4">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <a class="navbar-brand" href="/">Tasklist</a>
                 
@@ -24,9 +24,13 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+        </header>-->
+        
+        @include('commons.navbar')
         
         <div class="container">
+            @include('commons.error_messages')
+            
             @yield('content')
         </div>
         
